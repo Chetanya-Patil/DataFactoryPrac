@@ -1,0 +1,9 @@
+{
+	"name": "ADFDemochetanya",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "47f396be-d1e4-41b4-b6d0-10e541cac917",
+		"tenantId": "e4e34038-ea1f-4882-b6e8-ccd776459ca0"
+	}
+}

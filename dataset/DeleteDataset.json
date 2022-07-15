@@ -1,0 +1,19 @@
+{
+	"name": "DeleteDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Storagelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Delete Directory",
+				"fileSystem": "chetanya"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

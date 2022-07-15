@@ -1,0 +1,27 @@
+{
+	"name": "outputDatasetIfElseActivity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Storagelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"outputFolder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().outputFolder",
+					"type": "Expression"
+				},
+				"fileSystem": "chetanya"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
