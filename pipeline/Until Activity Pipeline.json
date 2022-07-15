@@ -10,7 +10,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@bool(pipeline().parameters.FileAvailable)",
+						"value": "@bool(activity('Get Metadata1').output.exists)",
 						"type": "Expression"
 					},
 					"activities": [
