@@ -1,0 +1,26 @@
+{
+	"name": "outputlocationdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Storagelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().folder",
+					"type": "Expression"
+				},
+				"fileSystem": "chetanya"
+			}
+		}
+	}
+}
