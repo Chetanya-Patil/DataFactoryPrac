@@ -1,6 +1,7 @@
 {
-	"name": "Web Activity",
+	"name": "Web and webhook Activity",
 	"properties": {
+		"description": "logic app url is provided in url and it is used to send email on completion like thing.",
 		"activities": [
 			{
 				"name": "Web1",
@@ -17,6 +18,19 @@
 				"typeProperties": {
 					"url": "https://dummy.restapiexample.com/api/v1/employees",
 					"method": "GET"
+				}
+			},
+			{
+				"name": "Send email",
+				"type": "WebHook",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"headers": {
+						"content-type": "application\\json"
+					},
+					"timeout": "00:10:00"
 				}
 			}
 		],
